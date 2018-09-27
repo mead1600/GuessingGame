@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.lang.Math;
 // Both methods work individually, when the second one isn't commented out, either neither program runs, or only the first program runs.
 // So if you want to use the second program, comment out the first one and bring the second one out of the comments
-//test
+//test 1
 public class Main {
 
     public static void main(String[] args) {
