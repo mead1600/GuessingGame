@@ -8,7 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        System.out.println("Which game do you want to play? choose between 'Guess the computers number' and 'The computer will guess your number'");
+        System.out.println("What is your name?");
+        Scanner name = new Scanner(System.in);
+        String username = name.nextLine();
+        System.out.println("Which game do you want to play "+ username +"? choose between 'Guess the computers number' and 'The computer will guess your number'");
         Scanner choice = new Scanner(System.in);
         String TheChoice = choice.nextLine();
         if (TheChoice.equals("Guess the computers number")) {
@@ -17,11 +20,11 @@ public class Main {
             Scanner answer = new Scanner(System.in);
             int realVal = answer.nextInt();
             while (realVal != randomnum) {
-                System.out.println("WRONG STOOPID!!!!! POOGERS");
+                System.out.println("WRONG!!"+ username + " IS STOOPID!!!!! POOGERS");
                 answer = new Scanner(System.in);
                 realVal = answer.nextInt();
             }
-            System.out.println("YOU WIN PogChamp PogChamp!!!!!!");
+            System.out.println("YOU WIN" + username + "PogChamp PogChamp!!!!!!");
         } else {
             if(TheChoice.equals("The computer will guess your number")) {
                 int compGuess = 50;
@@ -49,7 +52,7 @@ public class Main {
                         verifiedResult = verifier.nextLine();
                     }
                 }
-                System.out.println("YAY I WON. I ROCK AND YOU SOCCC");
+                System.out.println("YAY I WON. I ROCK AND YOU SOCCC," + username);
             }
     }
         }
